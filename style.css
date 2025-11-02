@@ -1,0 +1,332 @@
+body {
+    background: #111;
+    color: #fff;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    padding: 20px 5%;
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color .3s;
+}
+nav ul li a:hover {
+    color: #ff2756;
+}
+.header-text {
+    margin-top: 20%;
+    font-size: 22px;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+#header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 500px;
+    background-image: url('image/Picsart_25-09-20_12-37-25-790.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+#about {
+    margin-top: 80px;
+    padding-top: 120px;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+.about-col-1 {
+    flex: 0 0 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-col-1 img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 25px;
+    display: block;
+    background: #212121;
+    padding: 16px;
+}
+.about-col-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sub-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.about-col-2 p {
+    font-size: 19px;
+    color: #ccc;
+    margin-top: 0;
+}
+.tab-titles {
+    display: flex;
+    margin: 28px 0 22px 0;
+    gap: 40px;
+}
+.tab-links {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #eee;
+    padding-bottom: 4px;
+}
+.tab-links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: #ff2756;
+    transition: .4s;
+}
+.tab-links.active-link::after {
+    width: 100%;
+}
+.tab-contents ul {
+    padding: 0;
+}
+.tab-contents li {
+    list-style: none;
+    margin: 14px 0;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.tab-contents li span {
+    color: #ff2756;
+    font-size: 14px;
+    margin-right: 14px;
+    min-width: 90px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}
+
+#services {
+    padding: 30px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.services-list > div {
+    background: #191919;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    transition: transform .5s, background .3s;
+}
+.services-list > div:hover {
+    background: #ff2756;
+    transform: translateY(-12px) scale(1.03);
+}
+.services-list h2 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-size: 26px;
+}
+.services-list p {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+#portfolio {
+    padding: 50px 0;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff2756);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .3s;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.15);
+}
+.work:hover .layer {
+    opacity: 1;
+}
+.layer h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.layer p {
+    color: #fff;
+    font-size: 15px;
+    padding: 0 12px;
+}
+.layer a {
+    margin-top: 18px;
+    color: #ff2756;
+    background: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#contact {
+    padding: 80px 0 50px 0;
+}
+.contact-title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.contact-details {
+    margin-top: 12px;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-icon {
+    font-size: 26px;
+    margin-right: 14px;
+}
+.email-icon, .phone-icon {
+    color: #ff2756;
+}
+.contact-text {
+    color: #ccc;
+    font-size: 20px;
+}
+.contact-social {
+    margin-top: 18px;
+}
+.contact-social a {
+    color: #3b5998;
+    font-size: 26px;
+    margin-right: 16px;
+    transition: color .3s;
+}
+.contact-social a:nth-child(2) { color: #1da1f2; }
+.contact-social a:nth-child(3) { color: #e4405f; }
+.contact-social a:nth-child(4) { color: #0077b5; }
+.contact-social a:hover {
+    filter: brightness(1.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .about-col-1, .about-col-2 {
+        align-items: center;
+    }
+    .header-text {
+        margin-top: 18%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo {
+        width: 110px;
+    }
+    .container {
+        padding: 12px 2%;
+    }
+    .sub-title, .contact-title {
+        font-size: 24px;
+    }
+}

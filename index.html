@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikanth S R - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.jpg" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Rishikanth S R</h1>
+                <p style="color: #ff2756;">MERN Stack Developer</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about img.jpg" alt="Profile Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>21-year-old B.Tech IT graduate from Namakkal, passionate MERN Stack developer and tech enthusiast. Currently learning full-stack web development and helping manage M.Sasi Catering.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span> Web Structure</li>
+                            <li><span>CSS</span> Web Styling</li>
+                            <li><span>JavaScript</span> Web Functionality</li>
+                            <li><span>Java</span> Programming Language</li>
+                            <li><span>MERN Stack</span> Full Stack Web development</li>
+                            <li><span>Bootstrap</span> Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>M.Sasi Catering</span> Operations & IT Support</li>
+                            <li><span>Personal Projects</span> Portfolio Website, CRUD Apps</li>
+                            <li><span>Fresher</span> MERN Stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span> B.Tech Information Technology<br> K S Rangasamy College of Technology</li>
+                            <li><span>2025</span> MERN Stack Developer Course<br> IDM Tech Park</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Frontend Development</h2>
+                    <p>Responsive, modern UI with HTML, CSS, Bootstrap, and React.js. Pixel-perfect designs optimised for all devices.</p>
+                </div>
+                <div>
+                    <h2>Backend Development</h2>
+                    <p>RESTful APIs, database integration, authentication & server-side logic using Node.js, Express, and MongoDB.</p>
+                </div>
+                <div>
+                    <h2>Full Stack Projects</h2>
+                    <p>End-to-end project delivery combining frontend and backend, including deployment and ongoing maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work1 (1).jpg" alt="CRUD Web App">
+                    <div class="layer">
+                        <h3>CRUD Web Application</h3>
+                        <p>Node.js, Express, MongoDB: Manage & visualize business data with an intuitive UI.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work1 (2).jpg" alt="Portfolio Website">
+                    <div class="layer">
+                        <h3>Personal Portfolio Site</h3>
+                        <p>MERN stack, responsive design, modern UI/UX for self-branding.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="contact-title">Contact Me</h1>
+            <div class="contact-details">
+                <div class="contact-row">
+                    <i class="fa-solid fa-envelope contact-icon email-icon"></i>
+                    <span class="contact-text">rishikanth8329@gmail.com</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fa-solid fa-phone contact-icon phone-icon"></i>
+                    <span class="contact-text">+91 9025958329</span>
+                </div>
+            </div>
+            <div class="contact-social">
+                <a href="https://www.facebook.com/share/164n4598zG/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rishi__kanth003?igsh=enhiZzV5NzEzOHVv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rishikanth001/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/rishikanth18"target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="rishikanth-resume-mov.pdf" download target="_blank" class="resume-btn"> <i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tab Switch Script -->
+    <script>
+        function opentab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active-tab");
+            }
+            tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            document.getElementById(tabName).classList.add("active-tab");
+            evt.currentTarget.classList.add("active-link");
+        }
+    </script>
+</body>
+</html>
